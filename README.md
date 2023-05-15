@@ -1,3 +1,8 @@
+Deploy a WordPress on Kubernetes (using Minicube) with Helm and
+automation with Jenkins.
+Prerequisites:
+1. Install the necessary tools: Minicube, Helm and Jenkins.
+2. Separate repo in your GitHub Profile named: Final Project Assessment for Scalefocus Academy
 Requirement for the Project Assessment:
 1. Download Helm chart for WordPress. ( Bitnami chart:
 https://github.com/bitnami/charts/tree/main/bitnami/wordpress )
@@ -9,5 +14,8 @@ Checks if WordPress exists, if it doesn’t then it installs the chart.
 5. Deploy the helm chart using the Jenkins pipeline.
 6. Load the home page of the WordPress to see the final result.
 7. Explain the project directly in a README.md file in your project repo.
+BONUS POINTS:
+- Instead of using Minicube, consider using a different Kubernetes flavor of your choice, like k3s, k8s,
+microK8s for bonus points during the grading.
 8. Send the URL of your Project repo on email to ana.zjovanovska@scalefocus.com &
 kiro.velkovski@scalefocus.com titled “Final Project Assessment for Scalefocus Academy”.
