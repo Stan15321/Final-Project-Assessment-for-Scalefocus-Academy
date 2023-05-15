@@ -1,14 +1,12 @@
-Deploy a WordPress on Kubernetes (using Minicube) with Helm and
-automation with Jenkins.
-Prerequisites:
+# Deploy a WordPress on Kubernetes (using Minicube) with Helm and automation with Jenkins.
+- Prerequisites:
 1. Install the necessary tools: Minicube, Helm and Jenkins.
 - I already have Minikube and Jenkins and helm(TODO: need to explain the installment).
 
 
-2. Separate repo in your GitHub Profile named: Final Project Assessment for Scalefocus Academy
-Requirement for the Project Assessment:
+2. Separate repo in your GitHub Profile named: Final Project Assessment for Scalefocus Academy(DONE)
 
-
+- Requirement for the Project Assessment:
 1. Download Helm chart for WordPress. ( Bitnami chart:
 https://github.com/bitnami/charts/tree/main/bitnami/wordpress )
 2. In values.yaml, you need to change line 543 from type: LoadBalancer to type: ClusterIP ( Hint: there
