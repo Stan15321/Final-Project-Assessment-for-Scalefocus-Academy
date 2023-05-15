@@ -26,9 +26,21 @@
 - Also we can see that when we get the services, "wp1-wordpress" type is not LoadBalancer and it is "ClusterIP":
 ![image](https://github.com/Stan15321/Final-Project-Assessment-for-Scalefocus-Academy/assets/109627707/99b78532-cc24-4dbd-8052-219cb44538e6)
 
-4. Now with that being said, we can set up a local port forwarding:
+4. Now with that being said, we can set up a local port forwarding in order to login:
 ![image](https://github.com/Stan15321/Final-Project-Assessment-for-Scalefocus-Academy/assets/109627707/ac7a20fb-b35b-41dc-9ad3-0155d8cc66df)
 - The command "kubectl port-forward --namespace default svc/wp1-wordpress 3080:80" sets up a local port forwarding from port 3080 on the local machine to port 80 on the service wp1-wordpress in the Kubernetes cluster. This is useful because it allows you to access the WordPress application running in the cluster from your local machine. By forwarding traffic from your local machine to the Kubernetes cluster, you can interact with the WordPress application as if it were running on your local machine.
+- We will see this login page:
+![image](https://github.com/Stan15321/Final-Project-Assessment-for-Scalefocus-Academy/assets/109627707/76b7d6dc-ba04-4e0c-8f7f-7e4252319a98)
+
+- In order to login, we need to add to the URL: http://localhost:3080/login
+![image](https://github.com/Stan15321/Final-Project-Assessment-for-Scalefocus-Academy/assets/109627707/601d5dab-4cd7-4a56-bf73-7e00c691c80c)
+
+- From here we can see that the username is user and in order to see the password, we need to execute this command in order to decode and see our password.
+![image](https://github.com/Stan15321/Final-Project-Assessment-for-Scalefocus-Academy/assets/109627707/e640d6a3-4178-46ea-ab81-a149650339ce)
+
+- We will see the Dashboard after we login:
+![image](https://github.com/Stan15321/Final-Project-Assessment-for-Scalefocus-Academy/assets/109627707/b9e3a82b-cf57-40f2-8ec6-dbf6c7249b94)
+
 
 
 5. Create a Jenkins pipeline that checks if wp namespace exists, if it doesn’t then it creates one.
