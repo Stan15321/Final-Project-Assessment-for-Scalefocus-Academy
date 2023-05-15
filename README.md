@@ -2,22 +2,8 @@ Deploy a WordPress on Kubernetes (using Minicube) with Helm and
 automation with Jenkins.
 Prerequisites:
 1. Install the necessary tools: Minicube, Helm and Jenkins.
-- I already have Minikube and Jenkins, i will install only helm.
-- To install Helm on Windows, you can follow these steps:
+- I already have Minikube and Jenkins and helm(TODO: need to explain the installment).
 
-Download the latest Helm binary for Windows from the Helm GitHub repository: https://github.com/helm/helm/releases
-
-Extract the downloaded binary to a folder in your PATH environment variable. For example, you can extract the binary to the C:\bin folder.
-
-Add the folder containing the Helm binary to your PATH environment variable by following these steps:
-
-Open the Control Panel and click on System and Security.
-Click on System and then click on Advanced system settings.
-In the System Properties window, click on the Environment Variables button.
-In the Environment Variables window, under System Variables, select the Path variable and click on Edit.
-Click on New and add the path to the folder containing the Helm binary.
-Click on OK to close all windows.
-Test the Helm installation by running the following command in the Command Prompt:
 
 2. Separate repo in your GitHub Profile named: Final Project Assessment for Scalefocus Academy
 Requirement for the Project Assessment:
